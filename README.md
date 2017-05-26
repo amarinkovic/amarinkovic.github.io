@@ -1,1 +1,3 @@
-Coming soon
+Hi welcome to my github page.
+
+•͡˘㇁•͡˘
