@@ -13,11 +13,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install dependencies
-<<<<<<< HEAD
-        run npm install
-=======
         run: npm install
->>>>>>> any better?
 
       - name: Deploy site
         run: npm run deploy
