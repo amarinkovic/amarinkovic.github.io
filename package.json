@@ -1,0 +1,41 @@
+{
+  "name": "gatsby1",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby1",
+  "author": "aleksandar",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@deckdeckgo/highlight-code": "^3.6.0",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "babel-plugin-prismjs": "^2.1.0",
+    "gatsby": "^4.4.0",
+    "gatsby-plugin-image": "^2.4.0",
+    "gatsby-plugin-mdx": "^3.4.0",
+    "gatsby-plugin-sharp": "^4.4.0",
+    "gatsby-prismjs-dracula": "^0.1.15",
+    "gatsby-remark-highlight-code": "^3.2.0",
+    "gatsby-remark-prismjs": "^6.5.0",
+    "gatsby-source-filesystem": "^4.4.0",
+    "gatsby-theme-blog": "^4.0.0",
+    "gatsby-theme-blog-darkmode": "^4.0.0",
+    "gatsby-transformer-remark": "^5.5.1",
+    "gatsby-transformer-sharp": "^4.4.0",
+    "prismjs": "^1.26.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
