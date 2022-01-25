@@ -4,8 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Aleksandar's website">
-      <p>Welcome, delighted to see you here!</p>
+    <Layout pageTitle="Welcome, delighted to see you here!">
       <StaticImage
         alt="No!"
         src="../images/grumpy2.jpg"
