@@ -21,11 +21,12 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/package-lock.json') }}
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install dependencies and build
+        run: npm install && npm run build
 
-      - name: Setup git info
-        run: git config --local user.email "$(git log --format='%ae' HEAD^!)" && git config --local user.name "$(git log --format='%an' HEAD^!)"
-        
-      - name: Deploy site
-        run: npm run deploy
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
