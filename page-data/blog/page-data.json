@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-blog-index-js",
     "path": "/blog/",
-    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"January 15, 2022","title":"QNAP as a NUT server with clients"},"id":"22fc7726-a51d-510c-ab5b-f3b44d6bf675","slug":"22-01-nut-server/"}]}},"pageContext":{}},
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"date":"January 15, 2022","title":"QNAP as a NUT server with clients"},"id":"48be1a6d-528c-5521-a4f5-9dd42c5afa4f","slug":"22-01-nut-server/"}]}},"pageContext":{}},
     "staticQueryHashes": ["2744905544","3159585216"]}
