@@ -25,9 +25,9 @@ This diagram depicts the setup and below is an explaination:
 
 My QNAP NAS is connected with the UPS via a USB cable, and plays the role of a NUT server. When the power goes down UPS falls back to using battery. If the power does not come back after x minutes NAS will shut itself down gracefully bringing with it all the apps, VMs, and docker containers as well. 
 
-On top of that, it will signal to other devices on my network (NUT clients) that are also being powerd by this same UPS and tell them they are now running on battery and they should turn off. One thing to keep in mind is this requires network connectivity between NUT server and it's clients, even after the grid went down. For this reason, I am making sure this is the case by powering my switch via UPS as well.
+On top of that, it will signal to other devices on my network (NUT clients) that are also being powered by this same UPS and tell them they are now running on battery and they should turn off. One thing to keep in mind is this requires network connectivity between NUT server and it's clients, even after the grid went down. For this reason, I am making sure this is the case by powering my switch via UPS as well.
 
-Hardware should not make much of a difference, except the fact that QNAP is providing the server software adaptaion with some specifics related to it. I will explain this below. To be transparent about the hardware I using, here are some of the details. My NAS server is a QNAP 25B3e with two 10TB Seagate IronWolf disks running in RAID 1 mode. My UPS is an APC Smart-UPS 750VA LCD 230V. NAS model should not matter too much, as long as it is running similar version of QTS which is QNAP's own linux distribution. Version I am running is 4.5.4.
+Hardware should not make much of a difference, except the fact that QNAP is providing the server software adaptation with some specifics related to it. I will explain this below. To be transparent about the hardware I am using, here are some of the details. My NAS server is a QNAP 253Be with two 10TB Seagate IronWolf disks running in RAID 1 mode. My UPS is an APC Smart-UPS 750VA LCD 230V. NAS model should not matter too much, as long as it is running similar version of QTS which is QNAP's own linux distribution. Version I am running is 4.5.4.
 
 With that out of the way, we move on to practical things.
 
@@ -37,7 +37,7 @@ Once the USB cable is connected beetwen the UPS and NAS it should show up as an 
 
 <GatsbyImage alt="ups-power-lines" image={getImage(props.localImages[1])} />
 
-Here you will want to check the "Enable network UPS master" chackbox and enter IP addresses of the machines you are also powering with this same UPS and you want to shutdown.
+Here you will want to check the "Enable network UPS master" checkbox and enter IP addresses of the machines you are also powering with this same UPS and you want to shutdown.
 
 Now here comes the important part. Pay attention to the next couple of paragraphs. 
 
@@ -90,6 +90,6 @@ tail -n 2000 -f /var/log/syslog | grep --line-buffered upsmon
 
 ### Conclusion
 
-As you an see this is a pretty simlpe, yet powerful setup. It alows you to power as many device as your UPS can handle and shut them all down, in an automated maner in case of power grid outage, hopefully withouth any damage to your systems.
+As you an see this is a pretty simple, yet powerful setup. It alows you to power as many device as your UPS can handle and shut them all down, in an automated maner in case of power grid outage, hopefully withouth any damage to your systems.
 
  I hope you found this text useful.
