@@ -10,7 +10,7 @@ const BlogPost = ({data}) => {
   
   const image = getImage(data.mdx.frontmatter.hero_image)
   const disqusConf = {
-    url: `https://${data.site.host}/blog/${data.mdx.slug}`,
+    url: `${data.site.siteMetadata.siteUrl}/blog/${data.mdx.slug}`,
     identifier: data.mdx.id,
     title: data.mdx.frontmatter.title,
   }
@@ -42,10 +42,6 @@ const BlogPost = ({data}) => {
 
 export const query = graphql`
   query($id: String) {
-    site {
-      host
-      port
-    }
     mdx(id: {eq: $id}) {
       slug
       body
@@ -65,6 +61,11 @@ export const query = graphql`
             gatsbyImageData(layout: CONSTRAINED)
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

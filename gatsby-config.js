@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://amarinkovic.github.io",
     title: "amarinkovic",
+    author: "amarinkovic"
   },
   plugins: [
     // https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs
