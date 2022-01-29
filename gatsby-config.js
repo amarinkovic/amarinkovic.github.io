@@ -37,6 +37,12 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
     "gatsby-theme-blog", 
-    "gatsby-theme-blog-darkmode"
+    "gatsby-theme-blog-darkmode",
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `amarinkovic`
+      }
+  }
   ],
 };
