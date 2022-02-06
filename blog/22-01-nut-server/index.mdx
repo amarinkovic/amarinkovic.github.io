@@ -83,6 +83,8 @@ If everything went well, it should show output similar to this
 ➜  ~ upsc qnapups@<your_qnap_nut_server_ip> ups.status
 OL
 ```
+You can ommit the `ups.status` at the end of the previous command for a more elaborate report.
+
 Monitor entries are written to syslog, so you can tail for those with:
 ```
 tail -n 2000 -f /var/log/syslog | grep --line-buffered upsmon

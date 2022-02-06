@@ -1,7 +1,7 @@
 .container {
   margin: auto;
   max-width: 800px;
-  font-family: sans-serif;
+  font-family: "Times New Roman";
 }
 .heading {
   color: cadetblue;
