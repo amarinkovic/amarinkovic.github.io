@@ -5,12 +5,10 @@ module.exports = {
     author: "amarinkovic"
   },
   plugins: [
-    // https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          // `gatsby-remark-prismjs`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
