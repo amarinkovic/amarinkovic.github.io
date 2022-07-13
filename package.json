@@ -23,7 +23,7 @@
     "gatsby": "^4.7.1",
     "gatsby-plugin-disqus": "^1.2.3",
     "gatsby-plugin-image": "^2.4.0",
-    "gatsby-plugin-mdx": "^3.4.0",
+    "gatsby-plugin-mdx": "^3.18.1",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-prismjs-dracula": "^0.1.15",
     "gatsby-remark-highlight-code": "^3.2.0",
