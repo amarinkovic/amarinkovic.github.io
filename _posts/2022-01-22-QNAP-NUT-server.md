@@ -3,7 +3,12 @@ title: QNAP as a NUT server with clients
 date: 2022-01-15
 categories: [homelab]
 tags: [homelab, ups, qnap]
+hero_image_alt: "hero"
+hero_image_credit_text: "Jan Huber"
+hero_image_credit_link: "https://unsplash.com/photos/ZWH6Wm4rUw4"
 ---
+
+![hero](/assets/2022-01-22/powerlines.jpeg)
 
 Nice thing about UPS devices is that they can be connected to a computer via USB cable and in case of power outage, UPS can signal that machine to shut itself down after certain perod of time, if the power grid does not recover. Moreover there is a tool called NUT ([Network UPS Tools](https://networkupstools.org/documentation.html)) which can play the server/client role, so that the server propagates this information to other devices powered by the same UPS, to shut themselves down as well. This is what this post is about.
 
@@ -15,7 +20,7 @@ At the moment I am running couple of services inside my QNAP NAS server at home.
 
 This diagram depicts the setup and below is an explaination:
 
-<GatsbyImage alt="architecture" image={getImage(props.localImages[0])} />
+![architecture](/assets/2022-01-22/ups-nut-setup.jpeg)
 
 My QNAP NAS is connected with the UPS via a USB cable, and plays the role of a NUT server. When the power goes down UPS falls back to using battery. If the power does not come back after x minutes NAS will shut itself down gracefully bringing with it all the apps, VMs, and docker containers as well.
 
@@ -29,7 +34,7 @@ With that out of the way, we move on to practical things.
 
 Once the USB cable is connected beetwen the UPS and NAS it should show up as an external device. Navigate to the Control Panel and then the External Device and you should see your UPS USB connection settings.
 
-<GatsbyImage alt="ups-power-lines" image={getImage(props.localImages[1])} />
+![architecture](/assets/2022-01-22/nut-server.jpeg)
 
 Here you will want to check the "Enable network UPS master" checkbox and enter IP addresses of the machines you are also powering with this same UPS and you want to shutdown.
 
