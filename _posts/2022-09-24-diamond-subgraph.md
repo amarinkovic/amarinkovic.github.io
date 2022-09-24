@@ -1,5 +1,5 @@
 ---
-title: Building a subgraph for the Diamond
+title: Building a subgraph for the Diamond (EIP-2535)
 date: 2022-09-24
 categories: [blockchain]
 tags: [ethereum,subgraph,diamond, eip2535]
@@ -16,7 +16,7 @@ To give a high level overview of what we are doing here, we are using The Graph 
 
 ## Setting up the project
 
-Hopefully, it goes without saying you should refer to the official docs on how to get started with developing subgraphs, but I will be outlining some of the kee steps in the process. One of the things you will need, is the `graph-cli` which you will use to boot strap the empty project and then build up from there. Use this command to install it:
+You should definitelly refer to the official docs, on how to get started with developing subgraphs, but I will outline some of the key steps of the process. One of the things you will need to begin with, is the `graph-cli` which you will use to bootstrap the empty project and then build up from there. Use this command to install it:
 
 ```zsh
 yarn global add @graphprotocol/graph-cli
