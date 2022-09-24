@@ -1,6 +1,6 @@
 # Personal website
 
-![build](https://github.com/amarinkovic/amarinkovic.github.io/actions/workflows/main.yml/badge.svg)
+[![build](https://github.com/amarinkovic/amarinkovic.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/amarinkovic/amarinkovic.github.io/actions/workflows/pages-deploy.yml)
 
 This repo contains the files for my personal website. It is a static site generated using [Jekyll](https://jekyllrb.com/docs/installation/).
 
