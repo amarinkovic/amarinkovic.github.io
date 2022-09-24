@@ -20,7 +20,7 @@ At the moment I am running couple of services inside my QNAP NAS server at home.
 
 This diagram depicts the setup and below is an explaination:
 
-![architecture](/assets/2022-01-22/ups-nut-setup.jpeg)
+![architecture](/assets/2022-01-22/nut-setup-diagram.jpg)
 
 My QNAP NAS is connected with the UPS via a USB cable, and plays the role of a NUT server. When the power goes down UPS falls back to using battery. If the power does not come back after x minutes NAS will shut itself down gracefully bringing with it all the apps, VMs, and docker containers as well.
 
