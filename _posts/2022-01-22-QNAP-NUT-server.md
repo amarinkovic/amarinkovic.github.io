@@ -10,6 +10,8 @@ hero_image_credit_link: "https://unsplash.com/photos/ZWH6Wm4rUw4"
 
 ![hero](/assets/2022-01-22/powerlines.jpeg)
 
+Addign few GB of RAM to your QNAP can transform it into a small home server. For instance a NUT server, which can shutdown your devices in case of power outage. Read more and see how to make that happen.
+
 Nice thing about UPS devices is that they can be connected to a computer via USB cable and in case of power outage, UPS can signal that machine to shut itself down after certain perod of time, if the power grid does not recover. Moreover there is a tool called NUT ([Network UPS Tools](https://networkupstools.org/documentation.html)) which can play the server/client role, so that the server propagates this information to other devices powered by the same UPS, to shut themselves down as well. This is what this post is about.
 
 There are few minor specifics to running QNAP as a NUT server, compared to the usual way of installing it on a server, so I will outline those details here and hopefully save someone or my future self a bit of troubleshooting time.
