@@ -1,5 +1,5 @@
 ---
-title: QNAP as a NUT server with clients
+title: QNAP as a NUT server
 date: 2022-01-15
 categories: [homelab]
 tags: [homelab, ups, qnap]
